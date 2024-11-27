@@ -11,7 +11,7 @@ export default function MyApp({
   return (
     <>
      <Head>
-        <title>Amador Print Manager</title>
+        <title>Print Manager</title>
       </Head>
     <SessionProvider session={session}>
       <Component {...pageProps} />

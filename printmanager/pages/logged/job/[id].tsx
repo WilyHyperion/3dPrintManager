@@ -62,7 +62,6 @@ export default function JobView() {
                                 <h3 className="text-lg font-medium text-gray-700">User Information:</h3>
                                 <p className="text-gray-500"><strong>Name:</strong>{job.user.name}</p>
                                 <p className="text-gray-500"><strong>Email:</strong> {job.user.email}</p>
-                                <p className="text-gray-500"><strong>School ID:</strong> {job.user.studentID}</p>
                             </div>
                             {s?.data?.user?.role === "operator" && (
                             <div className="mt-6 p-4 border-2 text-black border-gray-300 rounded-lg bg-gray-50">
@@ -106,7 +105,7 @@ export default function JobView() {
                                 if(file){
                                     let a = document.createElement("a")
                                     a.href = URL.createObjectURL(file)
-                                    a.download = `job-${job.user?.name}-${job.user?.studentID}-${job.id}.stl`
+                                    a.download = `job-${job.user?.name}-${job.id}.stl`
                                     a.click()
                                 }
                              }}>

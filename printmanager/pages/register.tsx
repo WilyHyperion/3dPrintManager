@@ -3,7 +3,6 @@ import { useState } from 'react';
 
 export default function Register() {
   const [email, setEmail] = useState('');
-  const [studentId, setStudentId] = useState('');
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
   const [error, setError] = useState('');
@@ -20,7 +19,6 @@ export default function Register() {
 
     const formData = {
       email: email,
-      studentID: studentId,
       password: password,
       name: name, 
     };
@@ -80,7 +78,7 @@ export default function Register() {
 
             />
           <label htmlFor="credentials-email" className="block mb-2 ">
-            School Email
+            Email
             <input
               type="email"
               name="email"
@@ -92,17 +90,7 @@ export default function Register() {
             />
           </label>
 
-          <label htmlFor="credentials-StudentID" className="block mb-2 ">
-            Student ID
-            <input
-              type="number"
-              name="studentid"
-              placeholder="Student ID"
-              className="text-black w-full px-4 py-2 mt-1 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-400"
-              required
-              onChange={(e) => setStudentId(e.target.value)}
-            />
-          </label>
+         
 
           <label htmlFor="credentials-password" className="block mb-4 ">
             Password

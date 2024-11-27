@@ -34,7 +34,6 @@ export default function UserView() {
             <>
               <h1 className="text-3xl font-semibold text-purple-700 py-5">{user.name}</h1>
                <p className = "text-gray-500"><strong>Email:</strong>{user.email}</p>
-               <p className = "text-gray-500"><strong>Student ID:</strong>{user.studentID}</p>
                <p className = "text-gray-500"><strong>Role: </strong>{user.role}</p>
                <p className = "text-gray-500"><strong>Number of Jobs:</strong>{jobs.length}</p>
                <p className = "text-gray-500"><strong>Internal ID:</strong>{user._id}</p>

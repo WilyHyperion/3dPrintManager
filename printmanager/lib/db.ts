@@ -12,7 +12,7 @@ const client = new MongoClient(uri,  {
     }
 })
 client.connect()
-let db = client.db("amadorprintmanager")
+let db = client.db("cluster")
 const mongodb =  require("mongodb");
 const bucket = new mongodb.GridFSBucket(db, {
    "bucketName": "JobFiles"

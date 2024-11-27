@@ -31,7 +31,7 @@ export default function Home() {
       </div>
       <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-r from-indigo-900 via-purple-800 to-purple-900  ">
       <p className="text-purple-500 text-7xl font-bold text-center ">
-          Amador Valley <br /> Engineering <br /> 3D Printing Service
+         Online<br /> Engineering <br /> 3D Printing Service
         </p>
         <a href ="/login">
         <button

@@ -126,7 +126,6 @@ export default function JobChart(props: JobChartProps) {
                   }} className=""></Image> </div>
                   <h2 className="w-[10%]">{job.name}</h2>
                   <h2 className="w-[10%]">{new Date(job.date).toLocaleDateString()}</h2>
-                  <h2 className="w-[10%]">{job.user.studentID}</h2>
                   <h2 className="w-[10%]">${job.cost}</h2>
                   <h2 className="w-[10%]">{job.printTime} Hours</h2>
                   <h2 className="w-[10%]">{job.printer}</h2>

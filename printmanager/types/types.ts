@@ -20,7 +20,6 @@ export interface Job {
 export interface User {
     email: string;
     role: string;
-    studentID: number;
     _id: string;
     id: string;
 }       

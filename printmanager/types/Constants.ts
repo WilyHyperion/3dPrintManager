@@ -10,7 +10,7 @@ export const colors = [
 ];
 export const printers = [
   "Select Printer",
-  "Any (Non engineering Students select this)",
+  "Any",
   "Prusa",
   "Bambu Lab",
 ];

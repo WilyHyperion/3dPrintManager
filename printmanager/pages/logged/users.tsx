@@ -31,7 +31,6 @@ export default function Users() {
                     <p className = "w-[10%]"></p>
                     <p className = "w-[10%]">Name</p>
                     <p className = "w-[10%]">Email</p>
-                    <p className = "w-[10%]">Student ID</p>
                     <p className = "w-[10%]">Role</p>
                 </div>
                 {users.filter((e) => {
@@ -44,9 +43,7 @@ export default function Users() {
                     if(e.email?.toLowerCase().includes(search.toLowerCase())){
                         return true
                     }
-                    if(e.studentID?.toLowerCase().includes(search.toLowerCase())){
-                        return true
-                    }
+                    
                     if(e.role?.toLowerCase().includes(search.toLowerCase())){
                         return true
                     }
@@ -61,7 +58,6 @@ export default function Users() {
                             } />
                             <p className = "w-[10%]">{user.name || "No Name"}</p>
                             <p className = "w-[10%]">{user.email || "No Email"}</p>
-                            <p className = "w-[10%]">{user.studentID || "No ID"}</p>
                             <p className = "w-[10%]">{user.role || "No Role"}</p>
                         </div>
                         <hr className="w-full border-2 border-white" />
